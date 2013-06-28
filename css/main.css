@@ -1,0 +1,571 @@
+/*Universal*/
+body {
+	margin: 0;
+	font-family: arial;
+	font-size: 18px;
+ 
+	position: relative;
+}
+
+img {
+	border: 0!important;
+}
+
+.borderLightGrey {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.borderWhite {
+	border-bottom: 1px solid #ffffff;
+}
+
+.borderBlack {
+	border-bottom: 1px solid #000000;
+}
+
+
+.storySlideHeight928{
+	height: 928px;
+}
+
+.rightPaintTop {
+	top: 389px;
+}
+
+.storySlides {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.storyContent {
+	width:1000px;
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	text-align: left;
+
+}
+
+.storyContent a {
+	color:#000000;
+}
+
+.shopNow {
+	font-family: times;
+	font-style: italic;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.shopNow a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.shopFooter{
+	font-family: times;
+	font-style: italic;
+	font-size: 14px;
+	padding: 10px 0;
+	position: relative;
+	text-align: left;
+}
+
+.shopFooter a {
+	color:#000000;
+}
+
+.socialMedia {
+	float: right;
+	position: relative;
+	
+}
+
+.socialMedia img {
+	padding: 0 5px;
+}
+
+.addPaddingBetweenSlides {
+	padding: 10px 0;
+}
+
+
+/*/Universal*/
+
+/*Flexslider*/
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0!important;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {  position: relative;   zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 52px; height: 93px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav2.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: 0px; opacity: 1; }
+.flex-direction-nav .flex-prev {left: 0px; opacity: 1;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+/*/Flexslider*/
+
+/*Navigation*/
+#navigation {
+	position: absolute;
+	right:0;
+	top:130px;
+	z-index: 9999;
+}
+
+.fixedNavigation {
+	position: fixed!important;
+	top: 20px!important;
+}
+
+.scrollHorziantalFix {
+	position: fixed !important;
+	right: 0!important;
+}
+
+#navigation .navgationWidth {
+	width:233px;
+}
+
+#navigation .navgationLinks {
+	position: relative;	
+	left:25px;
+}
+
+#navigation #topNav {
+	background: url('../images/navigationTitle.png') no-repeat;
+	height:115px;
+}
+
+#navigation #sidesNav {
+	background: url('../images/navigationSides.png');
+}
+
+#navigation #bottomNav {
+	background: url('../images/navigationBottom.png') no-repeat;
+	height: 6px;
+}
+
+#navigation ul {
+	margin:0;
+	padding: 5px 5px 5px 4px;
+}
+
+#navigation li {
+	list-style: none;
+	font-size: 13px;
+	padding: 5px 5px 5px 4px;
+}
+
+
+#navigation li:hover {
+	background: #de148b;
+	color:#fff;
+}
+
+#navigation a {
+	text-decoration: none;
+	color: #949494;
+}
+
+.addBackroundForInViewElement {
+	background: #4f3084;
+	color:#fff;
+}
+
+/*/Navigation*/
+
+/*Back to school first slide*/
+#firstSlide {
+	background: #edeeef;
+	height: 810px;
+}
+
+ #firstStoryWrapper {
+	position: absolute;
+	top: 505px;
+	left: 700px;
+}
+
+#purpleFirstSlide {
+	background: url('../images/purple-paint1.gif');
+	position: absolute;
+	z-index: 999;
+	left: -400px;
+	width:591px;
+	height:805px;
+}
+
+
+/*/Back to school first slide*/
+
+
+/*Airwalk second slide*/
+#secondSlide {
+	background: #f1c6be;
+	height: 904px;
+	
+}
+
+ #secondStoryWrapper {
+	position: absolute;
+	top: 675px;
+	left: 70px;
+	width:860px;
+	text-align: center;
+}
+
+#whiteSecondSlide {
+	background: url('../images/white-paint2.gif');
+	position: absolute;
+	z-index: 1000;
+	left: -480px;
+	width:571px;
+	height:539px;
+	top:350px;
+}
+
+#secondFooterWidth {
+	width: 670px;
+	position: relative;
+	left:100px;
+}
+
+/*/Airwalk second slide*/
+
+/*Airwalk third slide*/
+#thirdSlide {
+	background: url('../images/liveOnTheWedgeBkrd.jpg') repeat-x;
+	height: 928px;
+	
+}
+
+ #thirdStoryWrapper {
+	position: absolute;
+	top: 750px;
+	left: 70px;
+	width:770px;
+}
+
+
+#thirdFooterWidth {
+	width: 690px;
+	position: relative;
+	
+}
+
+#moveThirdImage {
+position: absolute;
+left: -100px;
+top: -16px;
+}
+
+#purpleThirdSlide {
+	background: url('../images/purple-paint1.gif');
+	position: absolute;
+	z-index: 999;
+	left: -460px;
+	width:591px;
+	height:805px;
+}
+
+#titleLiveOnTheWedge {
+	position: absolute;
+	top:0;
+	left:60px;
+}
+/*/Airwalk second slide*/
+
+/*Fabulous fourth slide*/
+#fourthSlide {
+	background: #b3ddc7;
+	height: 926px;
+	clear:both;
+	
+}
+
+ #fourthStoryWrapper {
+	position: absolute;
+	top: 670px;
+	left: 210px;
+	width:770px;
+	text-align: right;
+}
+
+
+#fourthFooterWidth {
+	width: 750px;
+	float:right;
+	
+}
+
+#moveFourthImage {
+position: absolute;
+left: -110px;
+top: -16px;
+}
+
+/*/Fabulous fourth slide*/
+
+/*Fabulous fifth slide*/
+#fifthSlide {
+	background: url('../images/aBrightIdea_background_5.jpg');
+	height: 998px;
+	
+	
+}
+
+ #fifthStoryWrapper {
+	position: absolute;
+	top: 720px;
+	left: 70px;
+	width:660px;
+	
+}
+
+#fifthFooterWidth {
+	width: 610px;
+}
+
+#moveFifthImage {
+position: absolute;
+left: -70px;
+top: -16px;
+}
+
+/*/Fabulous fifth slide*/
+
+/*Brash sixth slide*/
+#sixthSlide {
+	background: #c9c289;
+	height: 1018px;
+	
+	
+}
+
+ #sixthStoryWrapper {
+	position: absolute;
+	top: 840px;
+	left: 20px;
+	width:640px;
+	
+}
+
+#sixthFooterWidth {
+	width: 645px;
+}
+
+#moveSixthImage {
+position: absolute;
+left: -65px;
+top: -16px;
+}
+
+#sixthRockANewLook {
+	position: absolute;
+	top:10px;
+	left: 450px;
+	z-index: 1;
+}
+
+/*/Brash sixth slide*/
+
+/*Uniform seventh slide*/
+#seventhSlide {
+height: 870px
+}
+
+ #seventhStoryWrapper {
+	position: absolute;
+	top: 640px;
+	left: 90px;
+	width:640px;
+	text-align: center;
+	
+}
+
+#seventhFooterWidth {
+	width: 645px;
+}
+
+.seventhStoryContent {
+	width:800px;
+	position: relative;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	text-align: left;
+	overflow: visible;
+}
+
+#flexSlideImages {
+	top: 205px;
+}
+
+#uniformShoesSign {
+	position: absolute;
+	top:10px;
+	left:-90px;
+}
+
+#purpleSeventhPaint {
+	background:url('../images/purple-paint7.gif');
+	width:539px;
+	height:571px;
+	position: absolute;
+	left: -550px;
+	top:200px;
+}
+
+/*/Uniform seventh slide*/
+
+/*Champion American eight nine slide*/
+#eightNineSlide {
+height: 713px;
+}
+
+#eightStoryWrapper {
+	position: absolute;
+	top: 400px;
+	left: 120px;
+	width:390px;	
+}
+
+#ninthStoryWrapper {
+	position: absolute;
+	top: 390px;
+	left: 670px;
+	width:430px;	
+}
+
+
+.eightNineStoryContent {
+	width:800px;
+	position: relative;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	text-align: left;
+}
+
+#eightChampionImage {
+	position: relative;
+	left:0;
+}
+
+#eightNineStoryContentWrapper {
+	width: 1186px;
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+	zoom:1;
+	text-align: left;
+}
+
+#nineAmericanFloat {
+	position: relative;
+	right:-28px;
+}
+
+#eightChampion {
+	position: relative;
+	left:3px;
+}
+
+/*/Champion American eight nine slide*/
+
+/*Back to school preview ten slide*/
+#tenSlide {
+height: 240px;
+}
+
+#tenStoryWrapper {
+	position: absolute;
+	top: 40px;
+	left: 410px;
+	width:630px;	
+}
+
+#tenStoryWrapper li {
+	color:#5b1b89;
+	line-height: 24px;
+}
+
+.tenStoryContent {
+	width:800px;
+	position: relative;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	text-align: left;
+}
+
+#tenStoryContentWrapper {
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+	zoom:1;
+	text-align: left;
+	left:3px;
+}
+
+#tenFindTheStyles {
+	position: relative;
+	font-size:28px;
+	color:#de148b;
+}
+
+/*/Back to school preview ten slide*/
